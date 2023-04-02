@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/product.css">
+</head>
+<body>
+    <nav>
+
+        <div id="black">Download our shop bags mobile app and your membership will extends by three month</div>
+        <div id="nav1">
+            <div id="logo">
+                <a href="./index.html">  <img src="./images/logo2.png" alt=""></a>
+              
+
+            </div>
+            <div id="links">
+                <a href="./product.html"><button>WOMEN</button></a>
+                <a href="./product.html"><button>MEN</button></a>
+                <a href="./product.html"><button>BEAUTY</button></a>
+                <a href="./product.html"><button>KIDS</button></a>
+                <a href="./product.html"><button>HOME</button></a>
+                <a href="./product.html"><button>DESIGNERS</button></a>
+                <a href="./product.html"><button>COMMUNITY</button></a>
+                <a href="./product.html"><button>SALE</button></a>
+            </div> 
+            
+            <div id="links2">
+                
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                <a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i> </a><span id="wishcount"></span>
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><span id="cartcount"></span>
+                <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i> </a>
+
+
+            </div>
+        </div>
+    </nav>  
+    <div id="main">
+        <div id="fix">
+            <p>Search Your Favorite Here </p>
+            <input type="search" oninput="search()" placeholder="What can we help you find?">
+            <p>Sort product by their category</p>
+            <select name="category" id="filter">
+              <option value="all">All</option>
+              <option value="men's clothing">Men's</option>
+              <option value="women's clothing">Women's</option>
+              
+            </select>
+            <br />
+            <p> Aarrange product by their price</p>
+            <select name="sorting" id="sort">
+              <option value="">Sorting</option>
+              <option value="LTH">Lower-higher</option>
+              <option value="HTL">Higher-lower</option>
+            </select>
+           <h1>👜</h1>
+          </div>
+          <div id="scroll">
+            <div id="container"></div>
+          </div>
+        
+    </div>
+   
+    
+    <footer>
+        <div id="foot1">
+            <div>
+                <h2> CUSTOMER CARE</h2>
+                <p>Shopper Protection</p>
+                <p>Loyalty Program</p>
+                <p>Size Guides</p>
+                <p>Contact Us / Feedback</p>
+                <p>Help Center</p>
+                <p>Shipping / Returns</p>
+            </div>
+            <div>
+                <h2>INFORMATION</h2>
+                <p>About Us</p>
+                <p> Influencer Program</p>
+                <p> Partner Stores</p>
+                <p> Sitemap</p>
+            </div>
+            <div>
+                <h2>LEGAL</h2>
+                <p>Terms Of Use</p>
+                <p>Disclosure</p>
+                <p>Privacy Policy</p>
+                <p>Community Guidelines</p>
+            </div>
+            <div>
+                <h2>NEWSLETTER SIGN UP</h2>
+                <input type="text" placeholder="e-mail"><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="true">
+                <label for="vehicle1"> Men</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="true">
+                <label for="vehicle2"> Women</label><br>
+                <input type="submit" value="Submit" style="padding: 2% 25%;">
+
+            </div>
+        </div>
+        
+        <p style="color: gray; text-align: center; margin: auto;">When you follow our links to visit a brand or
+            retailer’s website or make a purchase, ModeSens may earn a commission.</p>
+
+        <hr>
+        <div id="foot2">
+            <div id="footicon">
+             
+                    <img  style="width: 50%;" src="./images/logo2.png" alt="">
+               
+                <p>© 2022 shopBag Inc</p>
+            </div>
+            <div id="lastlink">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <i class="fa fa-yahoo" aria-hidden="true"></i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-snapchat" aria-hidden="true"></i>
+                
+            </div>
+        </div>
+       
+       
+
+
+    </footer>
+    
+</body>
+</html>
+<script src="./script/products.js"></script>
