@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family:Poppins;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+
+
+#formMain{
+    width:100%;
+    margin:auto;
+    margin:20px 0px;
+}
+#login{
+    width:30%;
+    display:flex;
+    padding:10px;
+    flex-flow:column;
+    /* border:1px solid red; */
+    gap:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:20px 0px;
+    margin:auto;
+
+
+}
+
+#login>input[type="text"],input[type="email"],input[type="password"]{
+    width:80%;
+    padding:15px;
+    border-radius:10px;
+    margin:auto;
+}
+
+#login>input[type="submit"]{
+    width:50%;
+    margin:auto;
+    padding:10px 20px;
+    border:none;
+    background: #000;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+
+}
+#showPass{
+    display:flex;
+    justify-content: flex-start;
+    padding-left:50px;
+    gap:10px;
+}
+#login>input[type="submit"]+div{
+    display:flex;
+    /* border:1px solid red; */
+    justify-content:center;
+    gap:10px;
+
+
+}
+
+#login a{
+    /* color:#000 */
+    color:blue;
+    text-decoration: none;
+}
+
+
+
+
+@media  screen and (min-width:960px) and (max-width:1180px) {
+    
+    #login{
+        width:35%;
+    }
+}
+@media  screen and (min-width:500px) and (max-width:960px) {
+    
+    #login{
+        width:50%;
+    }
+}
+@media  screen and (max-width:499px) {
+    
+    #login{
+        width:90%;
+    }
+}

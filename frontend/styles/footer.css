@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family:Poppins;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+
+#footer{
+    width:100vw;
+    background: #313f35;
+    color:white;
+    margin-top:25px;
+    
+}
+
+
+
+#footerMain{
+    width:100%;
+    margin:auto;
+    padding:20px 20px 30px 15px;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+#footer-top{
+    display:flex;
+    justify-content:space-around;
+    gap:25px;
+    /* margin-left:50px; */
+    /* border:1px solid red; */
+    /* margin:auto; */
+}
+
+
+.footer-top-col{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    gap:10px;
+}
+
+
+
+.footer-top-col>h5{
+    font-size:15px;
+    color:#fff;
+    cursor:pointer;
+}
+.footer-top-col>p{
+    color:rgba(255, 255, 255, 0.777);
+    cursor:pointer;
+
+}
+
+#sub-foot-top{
+    display:flex;
+    gap:0px;
+    border:1px solid white;
+}
+
+#sub-foot-top>button{
+    background: #fff;
+    padding:5px 10px;
+}
+
+hr{
+    color:#c0e4f8;
+    width:90%;
+    margin:auto
+}
+
+
+/* footer bottom */
+
+
+
+#footer-bottom{
+    display:grid;
+    grid-template-columns:15% 80% 5%;
+    gap:10px;
+    /* border:1px solid #fff; */
+    width:90%;
+    margin:auto;
+    align-items:center;
+
+
+}
+
+#footer-bottom-social{
+    display:flex;
+    /* width:20%; */
+    gap:10px;
+    /* border:1px solid red; */
+
+}
+#footer-bottom-social>div{
+    transition:.9s;
+    height:100%;
+    
+}
+#footer-bottom-social>div:hover{
+    scale:1.04;
+    cursor:pointer;
+}
+
+
+
+
+
+
+#footer-bottom-social img{
+
+   width:80%;
+    color:#fff;
+}
+
+/* #footer-bottom-chat{
+    border:1px solid pink;
+} */
+#footer-bottom-chat>div>img{
+    width:50%;
+}
+
+
+@media screen and (min-width:550px) and (max-width:850px){
+
+    #footer-top{
+        display:flex;
+        /* flex-flow:column; */
+        justify-content:center;;
+        gap:25px;
+        flex-wrap:wrap;
+        /* margin-left:50px; */
+        margin:auto;
+    }
+
+    #footer-top>.footer-top-col:last-child{
+        display:none;
+    }
+}
+
+
+
+@media screen and (max-width:549px) {
+    #footer-top{
+        display:flex;
+        flex-flow:column;
+        /* justify-content:flex-start; */
+        gap:25px;
+        /* margin-left:50px; */
+        margin:auto;
+    }
+
+    #footer-bottom{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        width:90%;
+        margin:auto;
+        gap:25px;
+    }
+
+    #footer-bottom-social img{
+
+        width:40%;
+         color:#fff;
+     }
+     #footer-bottom-chat{
+        display:none;
+     }
+
+}
+
+
+
+
+
+
+
+
+

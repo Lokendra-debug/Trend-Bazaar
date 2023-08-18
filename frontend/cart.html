@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <title>Cart Page</title>
+</head>
+<body>
+
+
+
+    <div id="nav"></div>
+    <!-- nav above -->
+
+     <h3 id="totalLengthDiv">There are total  <span id="total-length">0</span> items in the cart</h3>
+    <div id="main-cart">
+        <div id="cart-left">
+          
+            <div id="cart-container"></div>
+
+        </div>
+        <div id="cart-right">
+
+            <h3>Order Summary & Address</h3>
+
+            <div>
+                <p>Subtotal</p>
+                <h3 id="totalPrice">0</h3>
+                
+            </div>
+            <div>
+                <p>Your order is eligible for free delivery</p>
+            </div>
+            <div><h4>COD</h4></div>
+
+            <form action="" id="cform">
+                 <input type="text" placeholder="Full Name *" id="fname" required>
+                 <input type="tel" name="" id="mob" placeholder="Enter your mobile no *">
+                <input type="text" id="address" placeholder="Address *" required>
+                <input type="text" placeholder="State *" id="state" required>
+                <input type="text" placeholder="PIN code *" id="pin" required>
+                <input type="submit" name="" id="" value="Place Your Order" required>
+
+            </form>
+            
+
+        </div>
+    </div>
+
+   <!-- footer below -->
+   <div id="footer"></div>
+    
+</body>
+</html>
+
+<script src="./scripts/cart.js" type="module"></script>

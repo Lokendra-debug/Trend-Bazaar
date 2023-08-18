@@ -1,0 +1,525 @@
+/* container 1 css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family:Poppins;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+#container1{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:500px 300px 200px;
+    gap:10px;
+    width:70%;
+    /* margin-top:30px; */
+    margin:auto;
+    padding-top:20px;
+    /* border:5px solid blue; */
+    grid-template-areas:
+    "img1 img1 img1"
+    "img2 img3 img4"
+    "img5 img5 img5"
+}
+
+
+
+#container1>div>img{
+   width:100%;
+   height:100%;
+}
+#container1>div{
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   transition:.9s;
+}
+
+#container1>div:hover{
+  cursor:pointer;
+  scale:1.03;
+}
+
+#container1>div:nth-child(1){
+   grid-area: img1;
+}
+#container1>div:nth-child(2){
+   grid-area: img2;
+  
+}
+#container1>div:nth-child(3){
+   grid-area: img3;
+ 
+}
+#container1>div:nth-child(4){
+   grid-area: img4;
+ 
+}
+#container1>div:nth-child(5){
+   grid-area: img5;
+  
+}
+
+
+/* container 1 css */
+
+
+#shop-by{
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+    width:70%;
+    /* border:1px solid red; */
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:20px;
+    /* border:1px solid red; */
+    gap:20px;
+}
+#shop-by-img{
+     /* display:flex; */
+     /* justify-content:space-around; */
+     display:grid;
+     grid-template-columns: repeat(5,1fr);
+     /* height:40%; */
+     /* border:1px solid black; */
+
+}
+#shop-by-img>div{
+    height:60%;
+    margin:auto;
+    display:flex;
+    flex-flow:column;
+    gap:5px;
+    text-align:center;
+    /* border:1px solid red; */
+    justify-content:center;
+
+}
+#shop-by-img>div>img{
+    height:100%;
+    /* border:1px solid red; */
+    width:70%;
+    margin:auto;
+    transition:.9s;
+}
+#shop-by-img>div>img:hover{
+    scale:1.2;
+    cursor:pointer;
+
+}
+
+
+
+/* here over shop by img */
+
+/* container 3 css shop by bottom css */
+
+#shop-by-bottom{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+
+    margin:auto;
+    width:70%;
+    /* border:1px solid red; */
+    padding:10px 2px;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+#shop-by-bottom>div{
+    /* border:1px solid black; */
+    transition:.9s;
+}
+#shop-by-bottom>div:hover{
+    scale:1.03;
+    cursor:pointer;
+
+}
+#shop-by-bottom img{
+    width:100%;
+
+}
+
+
+
+
+/* container 3 css shop by bottom css */
+
+/* container-4 camping gear css */
+
+#camping-gear{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 500px;
+    row-gap:15px;
+    column-gap:8px;
+    width:70%;
+    margin:10px 0px;
+    margin:auto;
+    grid-template-areas:
+    
+    "img1 img2 img3";
+    /* border:1px solid black; */
+}
+
+#camping-gear>div{
+    /* border:1px solid red; */
+    margin:auto;
+    transition:.9s;
+}
+#camping-gear>div:hover{
+    cursor:pointer;
+    scale:1.02;
+    /* border:5px solid red; */
+
+}
+#camping-gear img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+
+
+}
+#camping-gear>div:nth-child(1){
+    grid-area:img1;
+}
+#camping-gear>div:nth-child(2){
+    grid-area:img2;
+}
+#camping-gear>div:nth-child(3){
+    grid-area:img3;
+}
+
+
+
+
+/* container-4 camping gear css */
+
+/* container-5 explore */
+
+#explore{
+    display:flex;
+    width:70%;
+    margin:10px 0px;
+    margin:auto;
+    flex-direction:column;
+    gap:5px;
+    text-align:center;
+}
+
+#exp-cont{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+    margin:auto
+}
+#exp-cont>div{
+    /* border:1px solid red; */
+    transition:.9s;
+    border-radius:5px;
+}
+
+#exp-cont>div:hover{
+    scale:1.04;
+    cursor:pointer;
+}
+
+#exp-cont img{
+    width:100%;
+}
+
+
+
+
+/* container-5 explore */
+
+
+/* container-6 foot terrain */
+
+#foot-terrain{
+    display:flex;
+    width:70%;
+    flex-direction: column;
+    gap:5px;
+    margin:auto;
+    margin-top:15px;
+    /* border:1px solid red; */
+
+}
+#foot-terrain>h2{
+    text-align:center;
+}
+
+#foot-cont{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:5px;
+    width:100%;
+    margin:auto;
+
+}
+#foot-cont>div{
+    transition:.9s;
+}
+#foot-cont>div:hover{
+    scale:1.06;
+    cursor:pointer;
+}
+
+#foot-cont>div>img{
+    width:100%;
+    height:100%;
+    /* border:1px solid black; */
+}
+
+
+/* container-6 foot terrain */
+
+/* container-7 follow-insta */
+
+#follow-insta{
+    width: 70%;
+    margin:auto;
+    margin-top:30px;
+    /* border:10px solid black */
+
+}
+#follow-insta>div{
+    display:flex;
+    width: 100%;
+    margin:auto;
+    flex-direction:column;
+    gap:5px;
+    text-align:center;
+    /* border:1px solid red; */
+
+}
+
+#insta-img{
+    width:100%;
+}
+
+#insta-img>img{
+    width:100%;
+}
+
+#insta-img:hover{
+    cursor:pointer;
+}
+
+
+
+/* container-7 follow-insta */
+
+
+/* container-8 insta-bottom */
+
+#instaBottomMain{
+
+    width:70%;
+    margin-top:15px;
+    margin:auto;
+    /* border:1px solid red; */
+}
+
+#instaBottom{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px 10px;
+    margin:auto;
+    width:100%;
+}
+#instaBottom>div{
+    border-radius:5px;
+    transition:.9s;
+   
+}
+#instaBottom>div:hover{
+    cursor:pointer;
+    scale:1.05;
+}
+#instaBottom>div>img{
+    width:100%;
+    border-radius:5px
+
+}
+
+
+
+/* container-8 insta-bottom */
+
+
+/* container-9 top  brands */
+
+
+#top-brands{
+    width:70%;
+    margin:auto;
+    margin-top:30px;
+    /* border: 1px solid red; */
+
+}
+
+#top-brands>div{
+    display:flex;
+    flex-flow: column;
+    gap:1px;
+    width:100%;
+    text-align:center;
+
+}
+
+#top-brands-div{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:3px;
+    margin:auto;
+    width:60%;
+}
+#top-brands-div>div{
+    transition:.8s;
+}
+#top-brands-div>div>img{
+    width:100%;
+}
+#top-brands-div>div:hover{
+    cursor:pointer;
+    scale:1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* container-9 top  brands */
+
+
+
+
+
+
+
+
+/* media */
+
+
+
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+   
+    #container1{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "img1 img1"
+    "img2 img3"
+    "img4 img4"
+    "img5 img5"
+    }
+
+
+    #shop-by-bottom{
+    grid-template-columns:repeat(1,1fr);
+
+    }
+
+    #shop-by-img{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #camping-gear{
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas:
+    "img1 img1"
+    "img2 img2"
+    "img3 img3"
+    "img4 img4"
+        
+    }
+    #exp-cont{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+    #foot-cont{
+    grid-template-columns:repeat(2,1fr);
+
+    }
+    #instaBottom{
+    grid-template-columns:repeat(2,1fr);
+
+    }
+
+    #top-brands-div{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+@media screen and (max-width:699px) {
+   
+    #container1{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    }
+
+
+    #shop-by-bottom{
+    grid-template-columns:repeat(1,1fr);
+
+    }
+
+    #camping-gear{
+    grid-template-columns:repeat(1,1fr);
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+        
+    }
+
+    #shop-by-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #exp-cont{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+    #foot-cont{
+    grid-template-columns:repeat(1,1fr);
+
+    }
+    #instaBottom{
+    grid-template-columns:repeat(1,1fr);
+
+    }
+
+    #top-brands-div{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+
+}
+
+
+
+
+
+
+
