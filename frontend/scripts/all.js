@@ -386,7 +386,7 @@ prev.addEventListener("click",()=>{
 
         
         pageDiv.innerText = count;
-        let url = `hhttps://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
+        let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
        fetchData(url);
        window.scrollTo(0, 0);
 })
