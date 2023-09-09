@@ -51,7 +51,7 @@ let total = document.querySelector("#total");
 
 let pageDiv = document.getElementById("pageNoDiv");
 
-let lurl = "https://numero-backend.vercel.app/all";
+let lurl = "https://treand-bazaar-backend-lokendra-debug.vercel.app/all";
 let lData= [];
 let length;
 let noOfPages;
@@ -81,9 +81,9 @@ async function fetchLength(url){
 let fetchedArr = [];
 
 let container1 = document.getElementById("container")
-let url = `https://numero-backend.vercel.app/all?_page=${count}&_limit=${limit}`
-let url2 = "https://numero-backend.vercel.app/all?_sort=price&_order=asc";
-let url3 = "https://numero-backend.vercel.app/all?_sort=price&_order=desc";
+let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
+let url2 = "https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=asc";
+let url3 = "https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=desc";
 
 
 
@@ -91,7 +91,7 @@ if(queryArr.length>0){
     let x = queryArr[queryArr.length-1].query;
     console.log(x);
 
-    let url = `https://numero-backend.vercel.app/all?q=${x}`;
+    let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?q=${x}`;
     fetchData(url)
     // console.log("fetching")
 
@@ -122,12 +122,12 @@ function filterPriceFun(){
                 }
 
                 if(filterPrice.value=="asc"){
-                    let url2 = `https://numero-backend.vercel.app/all?_sort=price&_order=asc&q=${topSearch.value}`
+                    let url2 = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=asc&q=${topSearch.value}`
                     console.log("INSIDE")
                     fetchData(url2)
                 }
                 if(filterPrice.value=="desc"){
-                    let url3 = `https://numero-backend.vercel.app/all?_sort=price&_order=desc&q=${topSearch.value}`
+                    let url3 = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=desc&q=${topSearch.value}`
 
                     fetchData(url3)
 
@@ -142,13 +142,13 @@ function filterPriceFun(){
         }
 
         if(filterPrice.value=="asc"){
-            let url2 = `https://numero-backend.vercel.app/all?_sort=price&_order=asc&_page=${count}&_limit=${limit}`;
+            let url2 = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=asc&_page=${count}&_limit=${limit}`;
             fetchData(url2)
 
         }
 
         if(filterPrice.value=="desc"){
-            let url3 = `https://numero-backend.vercel.app/all?_sort=price&_order=desc&_page=${count}&_limit=${limit}`;
+            let url3 = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_sort=price&_order=desc&_page=${count}&_limit=${limit}`;
             fetchData(url3)
         }
     }
@@ -161,7 +161,7 @@ function formSubmit(){
     event.preventDefault();
     let x = topSearch.value;
 
-    let url = `https://numero-backend.vercel.app/all?q=${x}`;
+    let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?q=${x}`;
     fetchData(url)
 
 
@@ -324,7 +324,7 @@ first.addEventListener("click",()=>{
     
     }
     pageDiv.innerText = count;
-    let url = `https://numero-backend.vercel.app/all?_page=${count}&_limit=${limit}`
+    let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
     fetchData(url);
     window.scrollTo(0, 0);
 })
@@ -353,7 +353,7 @@ last.addEventListener("click",()=>{
     // console.log(count)
     pageDiv.innerText = count;
 
-    let url = `https://numero-backend.vercel.app/all?_page=${count}&_limit=${limit}`
+    let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
     fetchData(url)
     window.scrollTo(0, 0);
 })
@@ -386,7 +386,7 @@ prev.addEventListener("click",()=>{
 
         
         pageDiv.innerText = count;
-        let url = `https://numero-backend.vercel.app/all?_page=${count}&_limit=${limit}`
+        let url = `hhttps://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
        fetchData(url);
        window.scrollTo(0, 0);
 })
@@ -417,7 +417,7 @@ next.addEventListener("click",()=>{
 
 
     // console.log(count)
-    let url = `https://numero-backend.vercel.app/all?_page=${count}&_limit=${limit}`
+    let url = `https://treand-bazaar-backend-lokendra-debug.vercel.app/all?_page=${count}&_limit=${limit}`
     fetchData(url)
     window.scrollTo(0, 0);
 })

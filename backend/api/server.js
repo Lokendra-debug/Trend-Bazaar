@@ -6,6 +6,12 @@ const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3000;
 
 server.use(middlewares);
+
+// Add this before server.use(router)
+server.use(jsonServer.rewriter({
+  '/api/*': '/$1'
+}))
+
 server.use(router);
 
 server.listen(PORT, () => {
