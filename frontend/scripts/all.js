@@ -1,13 +1,8 @@
-import footer from "./footer";
-import nav from "./nav";
-
 let signupCheck = JSON.parse(localStorage.getItem("signup"))||[]
-// console.log(signupCheck,"signup");
-// import nav from "./nav.js"
-// import footer from "./footer.js"
+
+import nav from "./nav.js"
+import footer from "./footer.js"
 // import topSearch
-
-
 
 let mainFooter = document.getElementById("footer");
 let mainNav = document.getElementById("nav")
@@ -68,6 +63,7 @@ async function fetchLength(url){
     // console.log(res);
     let data = await res.json();
     lData = data;
+    console.log(lData);
     length = lData.length;
     total.innerText = length;
     console.log(lData);
@@ -235,6 +231,7 @@ function displayData(data){
         
 
         add.addEventListener("click",()=>{
+            
             if(signupCheck.length>0){
                 if(checkData(obj)){
                     alert("Product already in cart");
@@ -253,7 +250,6 @@ function displayData(data){
                 alert("Please signup");
                 window.location.href = "signup.html"
             }
-           
              
         })
 
